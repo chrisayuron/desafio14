@@ -71,6 +71,7 @@ body{
     z-index:1;
     /*se hizo necesario usar z-index para que el botón fuera
     visible por encima del contenedor de los social icons*/
+    transition: 1s; /*Le agregamos el transitión para que la quitar la clase, también se vea una transición*/
 }
 .card__content__button:hover{
     cursor: pointer;
@@ -136,6 +137,13 @@ social-icons y desde JS poder mostrarlo*/
 .show{
     display: flex;
 }
+
+.rotate{
+    transform: scale(1.2) rotate(315deg);
+    transition: 1s;
+    
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; }
